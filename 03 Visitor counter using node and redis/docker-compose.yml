@@ -1,0 +1,12 @@
+version: '3'
+services:
+  redis-server:
+    image: 'redis'
+  node-app:
+    restart: always
+    build:
+      context: ./nodeapp
+      dockerfile: nodejs.Dockerfile
+    ports:
+      - "8080:8080"
+    command: ['npm','start']
