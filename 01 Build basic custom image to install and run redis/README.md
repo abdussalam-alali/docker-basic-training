@@ -2,7 +2,7 @@
 
 ---
 ### Usage
-###1. To build the image:
+### 1. To build the image:
 
 `docker build .`
 
@@ -18,7 +18,7 @@ Or you can tag your image using -t parameter
 
 if you don't specify <tag> docker will tag the image as latest by default.
 
-###2. To run your container
+### 2. To run your container
 a. ` docker ps`
 
 b. ` docker run <container_id>`
