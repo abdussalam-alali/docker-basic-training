@@ -1,4 +1,4 @@
-## Simple node app inside nodejs:alpine image
+## Simple node express app inside nodejs:alpine image
 
 ---
 ### Usage
