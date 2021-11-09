@@ -1,0 +1,15 @@
+
+FROM node:alpine
+
+WORKDIR '/app'
+
+COPY ./package.json .
+RUN npm install
+
+COPY . .
+
+CMD ["npm","run","start"]
+
+# volumes
+# docker run -p 80:3000 -v /app/node_modules $(pwd):/app {IMAGE_ID}
+# docker run -p 80:3000 -v /app/node_modules %cd%:/app {IMAGE_ID}
